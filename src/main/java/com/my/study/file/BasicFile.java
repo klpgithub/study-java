@@ -2,12 +2,19 @@ package com.my.study.file;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
+import java.io.InputStream;
+
+import org.apache.commons.io.FileUtils;
+
+import com.my.study.security.MD5Util;
 
 public class BasicFile {
 
 	/**
-	 * ¸ù¾ÝÂ·¾¶¹ýÂËÎÄ¼þ
+	 * ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
 	 * 
 	 * @author : KLP
 	 * @param file
@@ -38,21 +45,21 @@ public class BasicFile {
 		return files;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 
 		// File[] fileFilter = fileFilter(new File("D:/github"));
 		// for (File file : fileFilter) {
 		// System.out.println(file.getName());
 		// }
 
-		File[] fileNameFilter = fileNameFilter(
-				new File("C:/tt/tt/·ÇÄê±¨/ÆóÒµÒ»Ì×±íÍ³¼Æµ÷²éÖÆ¶È(2016)/ÆäËû[U]/520100000000_20170222142402/D5200000001511233201070000.csv"));
+//		File[] fileNameFilter = fileNameFilter(
+//				new File("C:/tt/tt/ï¿½ï¿½ï¿½ê±¨/ï¿½ï¿½ÒµÒ»ï¿½×±ï¿½Í³ï¿½Æµï¿½ï¿½ï¿½ï¿½Æ¶ï¿½(2016)/ï¿½ï¿½ï¿½ï¿½[U]/520100000000_20170222142402/D5200000001511233201070000.csv"));
+//		
+//		
+//		for (File file : fileNameFilter) {
+//			System.out.println(file.getName());
+//		}
 		
-		
-		for (File file : fileNameFilter) {
-			System.out.println(file.getName());
-		}
-
 	}
 
 }
